@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
 import './App.css';
+import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import MoviePage from './pages/MoviePage';
 import TvSeriesPage from './pages/TvSeriesPage';
@@ -13,6 +14,7 @@ function App() {
           <Route path='/movie-page' exact component={MoviePage} />
           <Route path='/tv-series-page' exact component={TvSeriesPage} />
         </Switch>
+        <Footer />
       </BrowserRouter>
     </div>
   );
